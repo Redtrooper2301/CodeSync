@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MonacoEditor from "@monaco-editor/react";
-import "./App.css";
+import "/src/App.css";
 
 <MonacoEditor
   options={{ suggestOnTriggerCharacters: true, quickSuggestions: true }}

@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import MonacoEditor from "@monaco-editor/react";
 import CodeEditor from "./Components/CodeEditor";
-import './App.css'
+import '/src/App.css';  // ✅ Just import it without assigning a variable
+
 
 function App() {
   const [code, setCode] = useState("// Start coding...");
@@ -22,7 +22,7 @@ function App() {
     <div style={{ padding: "20px" }}>
       <h2>🔥 Online Code Editor</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>}
-      <MonacoEditor
+      <CodeEditor
         height="100vh"
         width="1300px"
         language="javascript"  
@@ -34,4 +34,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
